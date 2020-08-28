@@ -1,0 +1,421 @@
+@charset "utf-8";
+*{margin:0;padding:0;box-sizing: border-box;}
+:link, :visited {color:inherit; text-decoration: none;}
+ul{list-style-type: none;}
+
+
+/* 헤더의 배경이미지 넣기 */
+header {
+    position: relative;
+    height: 750px;
+    background-image: url(headerimg.png);
+    background-size: 1688px 750px;
+    margin: 0px auto 0px auto;
+}
+
+/* 뉴턴 아이콘의 위치 지정 */
+#icon{
+    position: absolute;
+    display: inline-block;
+    left: 310px;
+    top: 40px;
+}
+/* 뉴턴 아이콘 그림의 크기 지정 */
+#icon img {width: 195px;}
+
+/* 네비게이션의 위치 지정 */
+#navigation{
+    position: absolute;
+    display: inline-block;
+    left: 950px;
+    top: 25px;
+}
+#navigation span {
+    float: right;
+    margin-right: 5px;
+}
+/* 네비게이션의 모든 글자들이 흰색으로 출력 */
+#navigation li, a, p {
+    color: white;
+}
+/* 네비게이션의 목록들을 인라인으로 설정 */
+#navigation li {
+    display: inline;
+}
+#navlog {
+    float: right;
+    margin-bottom: 20px;
+    margin-right: 50px;
+}
+#navlog a, li {
+    font-size: 20px;
+}
+#navlog a {
+    padding: 10px 25px 12px 25px;
+    
+    margin-left: -16px;
+    margin-right: -19px;
+}
+#navlog a:hover {
+    background-color: white;
+    color: rgb(255, 0, 191);
+}
+#navline{
+    margin-top: 35px;
+    margin-bottom: 12px;
+    width: 460px;
+    height: 3px;
+    background-color: white;
+}
+#navlist {
+    width: 500px;
+}
+#navlist li, a {
+    font-size: 23px;
+}
+#navlist a {
+    margin-left: -19px;
+    margin-right: -19px;
+    padding: 15px 20px 12px 20px;
+}
+#navlist a:hover {
+    color: rgb(255, 0, 191);
+    background-color: white;
+}
+#concept {
+    position: absolute;
+    top: 170px;
+    left: 510px;
+    width: 620px;
+    height: 150px;
+}
+#concept p{
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: white;
+}
+#search {
+    background-color: white;
+    width: 1100px;
+    height: 90px;
+    position: absolute;
+    left: 312px;
+    top: 350px;
+}
+#search div {
+    display: inline-block;
+}
+#searchbutton {
+    background-color: white;
+    width: 30px;
+    height: 45px;
+    border: none;
+}
+/* search 클릭시 나오는 테두리와 x자 없애기 */
+input:focus {outline:none;}
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration{
+	display:none;
+}
+
+#searchtext {
+    width: 700px;
+    height: 50px;
+    border: none;
+    font-size: 32px;
+}
+#btn_div {
+    position: relative;
+    left: 26px;
+    top: 21px;
+}
+#src_div {
+    position: relative;
+    left: 93px;
+    top: 10px;
+}
+#tag {
+    position: absolute;
+    color: white;
+    top: 453px;
+    left: 348px;
+    font-size: 30px;
+    width: 400px;
+}
+#sec1 {
+    position: relative;
+    height: 450px;
+}
+#section1 {
+    height: 350px;
+    position: relative;
+    display: inline-block;
+    left: 230px;
+    width: 460px;
+}
+#section1 p {
+    color: rgb(114, 110, 110);
+    font-size: 40px;
+    text-align: center;
+}
+#section1 table {
+    margin: auto;
+}
+#section1 td {
+    color: rgb(114, 110, 110);
+    font-size: 25px;
+    text-align: left;
+}
+#section1 img {
+    width: 45px;
+    position: relative;
+    margin-left: 140px;
+    margin-bottom: -45px;
+    z-index: -1;
+}
+#section1 #navline{
+    margin-top: 25px;
+    margin-bottom: 12px;
+    width: 460px;
+    height: 3px;
+    background-color: rgb(114, 110, 110);
+}
+#section2 {
+    position: absolute;
+    display: inline-block;
+    height: 350px;
+    left: 770px;
+}
+#angle {
+    width: 45px;
+    position: relative;
+    z-index: -1;
+    left: 173px;
+    margin-bottom: -45px;
+}
+#section2 p {
+    color: rgb(114, 110, 110);
+    font-size: 40px;
+    text-align: center;
+}
+#section2 #navline2 {
+    margin-top: 25px;
+    margin-bottom: 12px;
+    width: 720px;
+    height: 3px;
+    background-color: rgb(114, 110, 110);
+}
+#section2 table {
+    margin: 70px auto 0 auto;
+}
+#section2 td img {
+    margin: auto 15px auto 15px;
+}
+#ex1 {
+    position: relative;
+    height: 600px;
+}
+#ex1 div {
+    display: inline-block;
+}
+#ex1img {
+    position: absolute;
+    width: 670px;
+    height: 600px;
+    background-image: url(backgroundimg1.png);
+    background-size: 655px auto;
+    margin-left: 270px;
+    background-repeat: no-repeat;
+}
+#ex1img p {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 245px;
+}
+#ex1ex {
+    width: 600px;
+    position: absolute;
+    margin-left: 970px;
+    margin-top: 240px;
+}
+#ex1title {
+    font-family: 'Do Hyeon', sans-serif;
+    color: rgb(13, 13, 172);
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+#ex1exe {
+    color: rgb(114, 110, 110);
+    font-size: 19px;
+}
+#go1 {
+    display: inline-block;
+    margin-top: 30px;
+}
+#go1 p {
+    padding: 3px 30px 3px 30px;
+    color: rgb(255, 0, 191);
+    font-family: 'Do Hyeon', sans-serif;
+    border-width: 3.5px;
+    border-color: rgb(255, 0, 191);
+    border-style: solid;
+    color: rgb(255, 0, 191);
+    border-top-left-radius: 25px 30px;
+    border-top-right-radius: 25px 30px;
+    border-bottom-right-radius: 25px 30px;
+    border-bottom-left-radius: 25px 30px;
+}
+#ex2 {
+    position: relative;
+    height: 720px;
+}
+#ex2 div {
+    display: inline-block;
+}
+#ex2img {
+    position: absolute;
+    width: 670px;
+    height: 600px;
+    background-image: url(backgroundimg2.png);
+    background-size: 655px auto;
+    margin-left: 875px;
+    background-repeat: no-repeat;
+}
+#ex2img p {
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 50px;
+    text-align: center;
+    margin-top: 245px;
+}
+#ex2ex {
+    width: 400px;
+    height: 280px;
+    position: absolute;
+    margin-left: 430px;
+    margin-top: 285px;
+    text-align: right;
+}
+#ex2ex p div {
+    text-align: center;
+}
+#ex2title {
+    font-family: 'Do Hyeon', sans-serif;
+    color: rgb(13, 13, 172);
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+#ex2exe {
+    color: rgb(114, 110, 110);
+    font-size: 19px;
+}
+#go2 {
+    display: inline-block;
+    margin-top: 30px;
+}
+#go2 p {
+    padding: 3px 30px 3px 30px;
+    color: rgb(255, 0, 191);
+    font-family: 'Do Hyeon', sans-serif;
+    border-width: 3.5px;
+    border-color: rgb(255, 0, 191);
+    border-style: solid;
+    color: rgb(255, 0, 191);
+    border-top-left-radius: 25px 30px;
+    border-top-right-radius: 25px 30px;
+    border-bottom-right-radius: 25px 30px;
+    border-bottom-left-radius: 25px 30px;
+}
+#choice {
+    height: 570px;
+    margin-bottom: 50px;
+    position: relative;
+}
+#choice p {
+    font-family: 'Do Hyeon', sans-serif;
+    margin-left: 750px;
+    color: black;
+    font-size: 45px;
+    margin-bottom: 40px;
+    width: 200px;
+}
+#hugi {
+    width: 1370px;
+    height: 530px;
+    margin-left: 280px;
+}
+#hugi img {
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+}
+.ma {
+    position: absolute;
+    margin-left: 10px;
+    margin-top: -235px;
+}
+
+.small {
+    background-size: 200px 200px;
+}
+.img {
+    margin: 10px 10px 23px 10px;
+}
+#hugi a:hover {
+    z-index: 10;
+    background-color: rgb(34, 22, 102);
+}
+footer {
+    position: relative;
+    height: 500px;
+    background-image: url(footerimg.png);
+    background-size: 1688px auto;
+    margin: 0px auto 0px auto;
+    border: none;
+}
+#footerimg img {
+    width: 45px;
+}
+#footerimg {
+    position: absolute;
+    left: 450px;
+    top: 270px;
+}
+#footerimg li {
+    margin-bottom: 23px;
+}
+#lineimg {
+    display: inline-block;
+    position: absolute;
+    left: 540px;
+    top: 250px;
+    height: 220px;
+}
+#foterex {
+    display: inline-block;
+    position: absolute;
+    top: 240px;
+    left: 600px;
+    color: white;
+}
+#foterex pre {
+    font-family: 'Do Hyeon', sans-serif;
+}
+#foterex td {
+    text-align: center;
+    font-size: 21px;
+    width: 250px;
+    height: 40px;
+}
+#foterex th {
+    text-align: center;
+    font-size: 35px;
+    width: 250px;
+    height: 95px;
+}
+#tableimg {
+    margin-top: -60px;
+}
